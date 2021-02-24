@@ -1,0 +1,56 @@
+<view class="page">
+
+<button bindtap="submit" class="chakananniu">查看相似行程</button>      
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal||showAlert1||showAlert2||showci}}"></view>
+ 
+<scroll-view scroll-y="true" class="modalDlg" wx:if="{{showModal}}">
+ <!-- <view>我的：{{date}} {{time}} {{depart}} 至 {{dest}} 已有{{peopleNum}}人</view> -->
+ <view class="headtext">与你同日相似的信息</view>
+
+
+ <!-- 这里是时间筛选，还没做好 -->
+ <!-- <text>选择时间范围：</text>
+ <radio-group bindchange="radioChange">
+        <label><view><radio checked="true"/>全天</view></label>
+        <label><view><radio/>1h</view></label>
+        <label><view><radio/>30min</view></label>
+        <label><view><radio/>10min</view></label>
+ </radio-group> -->
+ 
+ <view wx:for="{{tripList}}" wx:for-item="item" wx:for-index="index" wx:key="item._id" class="trip">
+       <view class="content">
+              <view>时间：{{item.time}}</view>
+              <view>出发地：{{item.depart}}</view>
+              <view>目的地：{{item.dest}}</view>
+              <view>已有人数：{{item.peopleNum}}</view>              
+       </view>
+       <button class="jiaruanniu" size="mini" bindtap="join">加入同行</button>
+       
+
+  </view>
+  <view class="putcenter">
+       <button open-type="getUserInfo" bindtap="go" class="fabufanhuianniu" size="mini">仍旧发布新信息</button>
+       <button  bindtap="retn" class="fabufanhuianniu" size="mini">返回首页</button>
+  </view>
+</scroll-view>
+
+<view class="aljoin" wx:if="{{showci}}">
+       <text>您已加入同行者!</text>
+       <text>发布者联系方式为:</text>
+       <text>123</text>
+       <text>请尽快联系对方哦</text>
+       <button bindtap="retn" class="fabufanhuianniu">确定</button>
+</view>
+
+<view class="alert" wx:if="{{showAlert1}}">
+       <text>出发地与目的地不能相同哦</text>
+       <button bindtap="retn" class="fabufanhuianniu">确定</button>
+</view>
+<view class="alert" wx:if="{{showAlert2}}">
+       <text>联系方式不能为空哦</text>
+       <button bindtap="retn" class="fabufanhuianniu">确定</button>
+</view>
+ 
+
+</view>

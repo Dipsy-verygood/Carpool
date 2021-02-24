@@ -1,0 +1,41 @@
+
+<view>
+  
+<picker mode="date" value="{{nowDateString}}" start="{{nowDateString}}" bindchange="bindDateChange" class="picker">
+  <view class="picker">
+    选择出行日期：{{date}}
+  </view>
+</picker>
+<picker mode="time" value="{{time}}" bindchange="bindTimeChange" class="picker"> 
+  <view class="picker">
+    选择出行时间：{{time}}
+  </view>
+</picker>
+<picker value="{{departIndex}}" range="{{array}}" bindchange="bindDepartChange" class="picker">
+  <view class="picker">
+    选择出发地：{{array[departIndex]}}
+  </view>
+</picker>
+<picker value="{{destIndex}}" range="{{array}}" bindchange="bindDestChange" class="picker">
+  <view class="picker">
+    选择目的地：{{array[destIndex]}}
+  </view>
+</picker>
+<picker value="{{peopleNumIndex}}" range="{{num}}" bindchange="bindPeopleNumChange" class="picker">
+  <view class="picker">
+    已有人数：{{num[peopleNumIndex]}}人
+  </view>
+</picker>
+
+<view>
+  <text decode="{{true}}">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的联系方式：
+  </text>
+  <view class="picker">
+        <input maxlength="40" placeholder="微信/手机号" bindinput="bindContactInfoChange" />
+  </view>
+</view>
+
+<popup date="{{date}}" time="{{time}}" depart="{{array[departIndex]}}" dest="{{array[destIndex]}}" peopleNum="{{num[peopleNumIndex]}}" contactInfo="{{contactInfo}}"></popup>
+
+</view>

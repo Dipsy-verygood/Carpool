@@ -1,0 +1,26 @@
+<!--pages/wode/wode.wxml-->
+<view class="box">
+
+  <image src="{{avaUrl}}" class="ava"></image>
+  <text>昵称：{{nickname}}</text>
+  <button open-type='getUserInfo' class="ava" lang="zh_CN" bindgetuserinfo="onGotUserInfo" bindtap="go">点我同步头像昵称</button>
+</view>
+
+
+
+<text>
+  
+  
+  我发布的拼车信息：</text>
+
+<view wx:for="{{mytripList}}"  wx:for-item="item" wx:for-index="index" wx:key="" class="trip">
+    日期:{{item.date}}
+    时间：{{item.time}}
+    出发地：{{item.depart}}
+    目的地：{{item.dest}}
+    已有人数：{{item.peopleNum}}
+
+  </view>
+  <!-- <view>{{openid}}</view> -->
+  <button bindtap="getMytrip">刷新一下</button>
+  

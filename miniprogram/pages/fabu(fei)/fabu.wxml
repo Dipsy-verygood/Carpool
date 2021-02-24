@@ -1,0 +1,22 @@
+<picker mode="date" value="{{date}}" bindchange="bindDateChange">
+  <view class="picker">
+    选择出行日期：{{date}}
+  </view>
+</picker>
+<picker mode="time" value="{{time}}" bindchange="bindTimeChange"> 
+  <view class="picker">
+    选择出行时间：{{time}}
+  </view>
+</picker>
+<picker value="{{departIndex}}" range="{{array}}" bindchange="bindDepartChange">
+  <view class="picker">
+    选择出发地：{{array[departIndex]}}
+  </view>
+</picker>
+<picker value="{{destIndex}}" range="{{array}}" bindchange="bindDestChange">
+  <view class="picker">
+    选择目的地：{{array[destIndex]}}
+  </view>
+</picker>
+
+<button size="mini" type="default" bindtap="onAddTrip">上传</button>

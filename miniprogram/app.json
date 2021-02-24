@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/shouye/shouye",
+    "pages/wode/wode",
+    "pages/index/index",
+    "pages/jinsi/jinsi",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#467BCA",
+    "navigationBarTitleText": "一起出发",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color":"#666666",
+    "selectedColor":"#1296db",
+    "list": [{
+      "pagePath": "pages/shouye/shouye",
+      "text": "首页",
+      "iconPath":"images/home.png",
+      "selectedIconPath":"images/home-filling.png"
+       
+    },
+   
+    {
+      "pagePath": "pages/wode/wode",
+      "text": "我的",
+      "iconPath":"images/user.png",
+      "selectedIconPath":"images/user-filling.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

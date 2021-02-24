@@ -1,0 +1,106 @@
+.chakananniu{
+  background-color: #467BCA;
+  color:white;
+  margin:60rpx auto;
+}
+
+.fabufanhuianniu{
+  margin: 30rpx 20rpx;
+  display: inline-block;
+  background-color: #1e5bb6;
+  color:white;
+}
+
+.jiaruanniu{
+  margin-top: 10rpx;
+  margin-left: 360rpx;
+  background-color: #608dcf;
+  color:white;
+}
+
+.mask{
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ top: 0;
+ left: 0;
+ background: #000;
+ z-index: 9000;
+ opacity: 0.7;
+}
+ 
+.modalDlg{
+ width: 580rpx;
+ height: 1200rpx;
+ position: fixed;
+ top: 50%;
+ left: 0;
+ z-index: 9997;
+ margin: -600rpx 85rpx;
+ background-color: #fff;
+ border-radius: 36rpx;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.alert{
+  width: 580rpx;
+  height: 500rpx;
+  position: fixed;
+  top: 70%;
+  left: 0;
+  z-index: 9998;
+  margin: -600rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35rpx;
+  padding: 60rpx 0 0 0;
+  line-height: 300rpx;
+}
+
+.aljoin{
+  width: 580rpx;
+  height: 500rpx;
+  position: fixed;
+  top: 70%;
+  left: 0;
+  z-index: 9999;
+  margin: -600rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35rpx;
+  padding: 70rpx 0 0 0;
+  line-height: 50rpx;
+  
+}
+
+.headtext{
+  text-align: center;
+  margin: 40rpx auto;
+  font-weight: bold;
+}
+
+.trip{
+  background-color:#F2F2F2;
+  margin: 20rpx;
+}
+
+.content{
+  margin-left:20rpx;
+}
+
+label{
+  display: inline-block;
+}
+
+.putcenter{
+  margin: 0rpx auto;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+/* pages/wode/wode.wxss */
+.ava {
+  height: 100rpx;
+  width: 100rpx;
+  display:inline-block;
+  vertical-align: middle;
+
+}
+
+.box {
+  margin: 20rpx 0;
+  height:150rpx;
+  text-align: center;
+
+  background-color: #fff;
+
+}

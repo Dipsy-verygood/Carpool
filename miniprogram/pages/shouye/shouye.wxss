@@ -1,0 +1,20 @@
+.picker{
+  height:100rpx;
+  margin: 20rpx auto;
+  background-color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+
+  
+}
+input{
+  height:100rpx;
+  margin: 20rpx auto;
+  background-color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+
+  display:flex;
+
+align-items:center;
+}
